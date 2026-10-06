@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Profile - Student Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+       <div class="logo-container">
+    <img src="images/GCET logo.png" alt="GCET Logo" style="height: 48px; width: auto;">
+    <div class="title-text">
+                <h1>GCET Jammu - Student Portal</h1>
+            </div>
+        </div>
+        <div style="font-size: 13px;">
+            <strong>Archit Gupta</strong> <br>
+            <span style="color: var(--text-muted);">Roll No. 22CSE101</span>
+        </div>
+    </header>
+
+    <div class="portal-layout">
+        <aside class="sidebar">
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="profile.html" class="active">My Profile</a></li>
+                <li><a href="courses.html">My Courses</a></li>
+                <li><a href="courses.html">My Marks</a></li>
+                <li><a href="results.html">My Results</a></li>
+                <li><a href="#">Notice Board</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="login.html">Logout</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                <h2>My Profile</h2>
+                <a href="#" class="btn-btn" style="font-size: 12px;">Edit Profile</a>
+            </div>
+
+            <div class="card-panel" style="display: flex; gap: 30px; align-items: flex-start;">
+                <div style="text-align: center; width: 160px;">
+                   <img src="images/archit_photo.jpg" alt="Archit Gupta" style="width: 110px; height: 110px; border-radius: 50%; object-fit: cover; border: 3px solid var(--primary-red); margin-bottom: 12px;">
+                    <h3 style="font-size: 15px;">Archit Gupta</h3>
+                    <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 10px;">22CSE101</p>
+                    <button class="btn-secondary" style="font-size: 11px; padding: 5px 10px;">Upload Photo</button>
+                </div>
+
+                <div style="flex: 1;">
+                    <table class="data-table">
+                        <tr><td><strong>Full Name:</strong></td><td>Archit Gupta</td></tr>
+                        <tr><td><strong>Roll Number:</strong></td><td>22CSE101</td></tr>
+                        <tr><td><strong>Branch:</strong></td><td>Computer Science & Engineering</td></tr>
+                        <tr><td><strong>Semester:</strong></td><td>3rd</td></tr>
+                        <tr><td><strong>Date of Birth:</strong></td><td>14 March 2004</td></tr>
+                        <tr><td><strong>Email:</strong></td><td>archit22cse101s@gcetjammu.ac.in</td></tr>
+                        <tr><td><strong>Phone:</strong></td><td>+91 9876543210</td></tr>
+                        <tr><td><strong>Address:</strong></td><td>Akhnoor, Jammu, J&K</td></tr>
+                        <tr><td><strong>Date of Admission:</strong></td><td>2022</td></tr>
+                        <tr><td><strong>Blood Group:</strong></td><td>B+</td></tr>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 GCET Jammu. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

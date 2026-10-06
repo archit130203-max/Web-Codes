@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard - Student Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+    <img src="images/GCET logo.png" alt="GCET Logo" style="height: 48px; width: auto;">
+    <div class="title-text">
+                <h1>GCET Jammu - Student Portal</h1>
+            </div>
+        </div>
+        <div style="font-size: 13px;">
+            <strong>Archit Gupta</strong> <br>
+            <span style="color: var(--text-muted);">Roll No. 22CSE101</span>
+        </div>
+    </header>
+
+    <div class="portal-layout">
+        <aside class="sidebar">
+            <ul>
+                <li><a href="dashboard.html" class="active">Dashboard</a></li>
+                <li><a href="profile.html">My Profile</a></li>
+                <li><a href="courses.html">My Courses</a></li>
+                <li><a href="courses.html">My Marks</a></li>
+                <li><a href="results.html">My Results</a></li>
+                <li><a href="#">Notice Board</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="login.html">Logout</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <h2>Welcome, Archit Gupta</h2>
+            <p style="color: var(--text-muted); font-size: 13px; margin-bottom: 15px;">
+                Roll No: 22CSE101 | Branch: Computer Science & Engineering | Semester: 3rd
+            </p>
+
+            <div class="stats-container">
+                <div class="stat-box">
+                    <h3>6</h3>
+                    <p>Total Courses</p>
+                </div>
+                <div class="stat-box">
+                    <h3>78.5%</h3>
+                    <p>Average Marks</p>
+                </div>
+                <div class="stat-box">
+                    <h3>8.2</h3>
+                    <p>SGPA</p>
+                </div>
+                <div class="stat-box">
+                    <h3>92%</h3>
+                    <p>Attendance</p>
+                </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                <div class="card-panel">
+                    <h3 style="margin-bottom: 12px; color: var(--primary-red);">Personal Information</h3>
+                    <p style="font-size: 13px; margin-bottom: 6px;"><strong>Name:</strong> Archit Gupta</p>
+                    <p style="font-size: 13px; margin-bottom: 6px;"><strong>Roll No:</strong> 22CSE101</p>
+                    <p style="font-size: 13px; margin-bottom: 6px;"><strong>Branch:</strong> Computer Science & Engineering</p>
+                    <p style="font-size: 13px; margin-bottom: 6px;"><strong>Email:</strong> archit22cse101s@gcetjammu.ac.in</p>
+                    <p style="font-size: 13px; margin-bottom: 15px;"><strong>Phone:</strong> +91 9876543210</p>
+                    <a href="profile.html" class="btn-btn" style="font-size: 12px;">View Full Profile</a>
+                </div>
+
+                <div class="card-panel">
+                    <h3 style="margin-bottom: 12px; color: var(--primary-red);">Recent Notices</h3>
+                    <ul style="padding-left: 18px; font-size: 13px; line-height: 1.8;">
+                        <li>Mid Term Examination Schedule <span style="color: var(--text-muted); font-size: 11px;">(10 Sep 2026)</span></li>
+                        <li>Project Submission Guidelines <span style="color: var(--text-muted); font-size: 11px;">(05 Sep 2026)</span></li>
+                        <li>Holiday Notice <span style="color: var(--text-muted); font-size: 11px;">(01 Sep 2026)</span></li>
+                        <li>Placement Drive Registration <span style="color: var(--text-muted); font-size: 11px;">(28 Aug 2026)</span></li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 GCET Jammu. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

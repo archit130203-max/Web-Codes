@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Login - GCET Jammu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+       <div class="logo-container">
+    <img src="images/GCET logo.png" alt="GCET Logo" style="height: 48px; width: auto;">
+    <div class="title-text">
+                <h1>Govt. College of Engineering and Technology, Jammu</h1>
+                <p>(Autonomous College)</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div style="max-width: 380px; margin: 40px auto;" class="card-panel">
+            <h2 style="color: var(--primary-red); text-align: center; margin-bottom: 20px;">Student Login</h2>
+            <form action="dashboard.html">
+                <div class="form-group">
+                    <label for="roll">Roll Number / Email</label>
+                    <input type="text" id="roll" placeholder="Enter Roll Number or Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Password</label>
+                    <input type="password" id="pwd" placeholder="Enter Password" required>
+                </div>
+                <div class="form-group" style="display: flex; justify-content: space-between; font-size: 12px;">
+                    <label><input type="checkbox"> Remember Me</label>
+                    <a href="#" style="color: var(--primary-red); text-decoration: none;">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn-btn" style="width: 100%;">Login</button>
+                
+                <div style="text-align: center; margin-top: 15px; font-size: 12px; color: var(--text-muted);">
+                    OR
+                </div>
+                <button type="button" class="btn-secondary" style="width: 100%; margin-top: 15px; font-size: 12px;">Login with College Email</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 GCET Jammu. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

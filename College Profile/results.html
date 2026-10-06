@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Semester Results - Student Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+    <img src="images/GCET logo.png" alt="GCET Logo" style="height: 48px; width: auto;">
+    <div class="title-text">
+                <h1>GCET Jammu - Student Portal</h1>
+            </div>
+        </div>
+        <div style="font-size: 13px;">
+            <strong>Archit Gupta</strong> <br>
+            <span style="color: var(--text-muted);">Roll No. 22CSE101</span>
+        </div>
+    </header>
+
+    <div class="portal-layout">
+        <aside class="sidebar">
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="profile.html">My Profile</a></li>
+                <li><a href="courses.html">My Courses</a></li>
+                <li><a href="courses.html">My Marks</a></li>
+                <li><a href="results.html" class="active">My Results</a></li>
+                <li><a href="#">Notice Board</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="login.html">Logout</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <h2>Semester Results</h2>
+            <br>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Semester</th>
+                        <th>SGPA</th>
+                        <th>Percentage</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>3rd Semester</td>
+                        <td>8.2</td>
+                        <td>78.5%</td>
+                        <td><span class="badge-pass">Pass</span></td>
+                        <td><a href="#" class="btn-btn" style="font-size: 11px; padding: 4px 8px;">View Details</a></td>
+                    </tr>
+                    <tr>
+                        <td>2nd Semester</td>
+                        <td>7.9</td>
+                        <td>76.3%</td>
+                        <td><span class="badge-pass">Pass</span></td>
+                        <td><a href="#" class="btn-btn" style="font-size: 11px; padding: 4px 8px;">View Details</a></td>
+                    </tr>
+                    <tr>
+                        <td>1st Semester</td>
+                        <td>7.6</td>
+                        <td>74.1%</td>
+                        <td><span class="badge-pass">Pass</span></td>
+                        <td><a href="#" class="btn-btn" style="font-size: 11px; padding: 4px 8px;">View Details</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="card-panel" style="margin-top: 25px;">
+                <h3 style="color: var(--primary-red); margin-bottom: 10px;">CGPA Summary</h3>
+                <p style="font-size: 13px; margin-bottom: 6px;"><strong>Total Semesters:</strong> 3</p>
+                <p style="font-size: 13px; margin-bottom: 6px;"><strong>Current CGPA:</strong> 7.90</p>
+                <p style="font-size: 13px;"><strong>Overall Percentage:</strong> 76.3%</p>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 GCET Jammu. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
