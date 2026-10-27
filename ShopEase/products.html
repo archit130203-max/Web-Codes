@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ShopEase - Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <h1>ShopEase</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="#cart">Cart (<span id="cartCount">0</span>)</a>
+        <button onclick="darkMode()">Dark Mode</button>
+    </nav>
+
+</header>
+
+
+<section class="product-page">
+
+    <h2>Our Products</h2>
+
+
+    <!-- Search -->
+
+    <input type="text"
+           id="search"
+           placeholder="Search product">
+
+
+    <!-- Category Filter -->
+
+    <div class="buttons">
+
+        <button onclick="filterProducts('all')">All</button>
+
+        <button onclick="filterProducts('electronics')">
+            Electronics
+        </button>
+
+        <button onclick="filterProducts('clothing')">
+            Clothing
+        </button>
+
+        <button onclick="filterProducts('accessories')">
+            Accessories
+        </button>
+
+    </div>
+
+
+    <!-- Products -->
+
+    <div class="products">
+
+
+        <div class="card"
+             data-category="electronics"
+             data-name="Headphones"
+             data-price="999"
+             data-description="Good quality headphones.">
+
+            <img src="images/headphones2.jpg">
+
+            <h3>Headphones</h3>
+
+            <p>Good quality headphones.</p>
+
+            <p>₹999</p>
+
+            <button onclick="addCart('Headphones',999)">
+                Add to Cart
+            </button>
+
+            <button onclick="showDetails(this)">
+                View Details
+            </button>
+
+            <button onclick="addWishlist('Headphones')">
+                Wishlist
+            </button>
+
+        </div>
+
+
+        <div class="card"
+             data-category="electronics"
+             data-name="Smart Watch"
+             data-price="1499"
+             data-description="Simple smart watch.">
+
+            <img src="images/smart watch2.png">
+
+            <h3>Smart Watch</h3>
+
+            <p>Simple smart watch.</p>
+
+            <p>₹1499</p>
+
+            <button onclick="addCart('Smart Watch',1499)">
+                Add to Cart
+            </button>
+
+            <button onclick="showDetails(this)">
+                View Details
+            </button>
+
+            <button onclick="addWishlist('Smart Watch')">
+                Wishlist
+            </button>
+
+        </div>
+
+
+        <div class="card"
+             data-category="electronics"
+             data-name="Bluetooth Speaker"
+             data-price="799"
+             data-description="Small wireless speaker.">
+
+            <img src="images/Bluetooth speaker.png">
+
+            <h3>Bluetooth Speaker</h3>
+
+            <p>Small wireless speaker.</p>
+
+            <p>₹799</p>
+
+            <button onclick="addCart('Bluetooth Speaker',799)">
+                Add to Cart
+            </button>
+
+            <button onclick="showDetails(this)">
+                View Details
+            </button>
+
+            <button onclick="addWishlist('Bluetooth Speaker')">
+                Wishlist
+            </button>
+
+        </div>
+
+
+        <div class="card"
+             data-category="electronics"
+             data-name="Keyboard"
+             data-price="599"
+             data-description="Simple computer keyboard.">
+
+            <img src="images/Keyboard.png">
+
+            <h3>Keyboard</h3>
+
+            <p>Simple computer keyboard.</p>
+
+            <p>₹599</p>
+
+            <button onclick="addCart('Keyboard',599)">
+                Add to Cart
+            </button>
+
+            <button onclick="showDetails(this)">
+                View Details
+            </button>
+
+            <button onclick="addWishlist('Keyboard')">
+                Wishlist
+            </button>
+
+        </div>
+
+
+        <div class="card"
+             data-category="clothing"
+             data-name="T-Shirt"
+             data-price="499"
+             data-description="Comfortable cotton T-shirt.">
+
+            <img src="images/T-Shirt.webp">
+
+            <h3>T-Shirt</h3>
+
+            <p>Comfortable cotton T-shirt.</p>
+
+            <p>₹499</p>
+
+            <button onclick="addCart('T-Shirt',499)">
+                Add to Cart
+            </button>
+
+            <button onclick="showDetails(this)">
+                View Details
+            </button>
+
+            <button onclick="addWishlist('T-Shirt')">
+                Wishlist
+            </button>
+
+        </div>
+
+
+        <div class="card"
+             data-category="clothing"
+             data-name="Shoes"
+             data-price="1999"
+             data-description="Comfortable casual shoes.">
+
+            <img src="images/Shoes2.png">
+
+            <h3>Shoes</h3>
+
+            <p>Comfortable casual shoes.</p>
+
+            <p>₹1999</p>
+
+            <button onclick="addCart('Shoes',1999)">
+                Add to Cart
+            </button>
+
+            <button onclick="showDetails(this)">
+                View Details
+            </button>
+
+            <button onclick="addWishlist('Shoes')">
+                Wishlist
+            </button>
+
+        </div>
+
+
+        <div class="card"
+             data-category="accessories"
+             data-name="Backpack"
+             data-price="799"
+             data-description="Useful bag for daily use.">
+
+            <img src="images/backpack2.png">
+
+            <h3>Backpack</h3>
+
+            <p>Useful bag for daily use.</p>
+
+            <p>₹799</p>
+
+            <button onclick="addCart('Backpack',799)">
+                Add to Cart
+            </button>
+
+            <button onclick="showDetails(this)">
+                View Details
+            </button>
+
+            <button onclick="addWishlist('Backpack')">
+                Wishlist
+            </button>
+
+        </div>
+
+
+        <div class="card"
+             data-category="accessories"
+             data-name="Wallet"
+             data-price="399"
+             data-description="Simple leather wallet.">
+
+            <img src="images/Wallet.png">
+
+            <h3>Wallet</h3>
+
+            <p>Simple leather wallet.</p>
+
+            <p>₹399</p>
+
+            <button onclick="addCart('Wallet',399)">
+                Add to Cart
+            </button>
+
+            <button onclick="showDetails(this)">
+                View Details
+            </button>
+
+            <button onclick="addWishlist('Wallet')">
+                Wishlist
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Cart -->
+
+    <h2 id="cart">My Cart</h2>
+
+    <div id="cartItems">
+        Your cart is empty.
+    </div>
+
+    <h3 id="total">
+        Total: ₹0
+    </h3>
+
+
+    <!-- Wishlist -->
+
+    <h2>My Wishlist</h2>
+
+    <div id="wishlist">
+        Wishlist is empty.
+    </div>
+
+</section>
+
+
+<!-- Product Details Popup -->
+
+<div id="popup" class="popup">
+
+    <div class="popup-box">
+
+        <h2 id="popupName"></h2>
+
+        <p id="popupDescription"></p>
+
+        <p id="popupPrice"></p>
+
+        <button onclick="closePopup()">Close</button>
+
+    </div>
+
+</div>
+
+
+<button id="topButton" onclick="backToTop()">↑ Top</button>
+
+
+<footer>
+
+    <p>© 2026 ShopEase</p>
+
+    <p>Facebook | Instagram | Twitter</p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
